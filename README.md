@@ -15,3 +15,13 @@ To implement a web component, you generally follow these steps:
 5. Use your custom element wherever you like on your page, just like you would any regular HTML element.
 
 Custom elements can be either autonomous or customized built-in elements, which inherit from basic HTML elements.
+
+## Examples
+
+👨‍💻 This is a code example that showcases the use of Web Components. It includes two custom elements:
+
+1️⃣ button-enhanced is an autonomous custom element that creates a button with enhanced styling and a custom click event.
+
+2️⃣ paragraph-word-counter is a customized built-in element that extends the p element and displays the word count of its text content.
+
+The code also includes lifecycle methods for the button-enhanced custom element that are invoked when the element is connected, disconnected, adopted, or when its attributes change.
