@@ -17,7 +17,7 @@ To implement a web component, you generally follow these steps:
 Custom elements can be either autonomous or customized built-in elements, which inherit from basic HTML elements.
 
 
-## Getting started
+# Getting started
 
 👨‍💻 This is a code example that showcases the use of Web Components. It includes two custom elements:
 
