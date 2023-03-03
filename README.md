@@ -19,7 +19,9 @@ Custom elements can be either autonomous or customized built-in elements, which 
 
 # Getting started
 
-👨‍💻 This is a code example that showcases the use of Web Components. It includes two custom elements:
+👨‍💻 This is a code example that showcases the use of Web Components.
+  
+  It includes two custom elements:
 
 1️⃣ `button-enhanced` is an autonomous custom element that creates a button with enhanced styling and a custom click event.
 
