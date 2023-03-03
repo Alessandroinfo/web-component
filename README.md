@@ -20,8 +20,8 @@ Custom elements can be either autonomous or customized built-in elements, which 
 
 👨‍💻 This is a code example that showcases the use of Web Components. It includes two custom elements:
 
-1️⃣ button-enhanced is an autonomous custom element that creates a button with enhanced styling and a custom click event.
+1️⃣ `button-enhanced` is an autonomous custom element that creates a button with enhanced styling and a custom click event.
 
-2️⃣ paragraph-word-counter is a customized built-in element that extends the p element and displays the word count of its text content.
+2️⃣ `paragraph-word-counter` is a customized built-in element that extends the p element and displays the word count of its text content.
 
 The code also includes lifecycle methods for the button-enhanced custom element that are invoked when the element is connected, disconnected, adopted, or when its attributes change.
