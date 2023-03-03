@@ -16,7 +16,7 @@ To implement a web component, you generally follow these steps:
 
 Custom elements can be either autonomous or customized built-in elements, which inherit from basic HTML elements.
 
-## Examples
+## Getting started
 
 👨‍💻 This is a code example that showcases the use of Web Components. It includes two custom elements:
 
@@ -25,3 +25,5 @@ Custom elements can be either autonomous or customized built-in elements, which 
 2️⃣ `paragraph-word-counter` is a customized built-in element that extends the p element and displays the word count of its text content.
 
 The code also includes lifecycle methods for the button-enhanced custom element that are invoked when the element is connected, disconnected, adopted, or when its attributes change.
+
+▶️ Open the `index.html` in your browser to see the custom components rendered and the relative console log.
