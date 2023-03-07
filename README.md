@@ -31,7 +31,7 @@ To implement a web component, you generally follow these steps:
    from.
 
     ```javascript
-    customElements.define('my-component', MyComponent, {extends: 'button'});
+    customElements.define('my-component', MyComponent);
     ```
 
 3. If required, attach a shadow DOM to the custom element using Element.attachShadow() method.
@@ -51,27 +51,22 @@ To implement a web component, you generally follow these steps:
 
 4. If required, define an HTML template using <template> and <slot>.
 
-    ```html
-    
-    <template id="my-component">
-        <style>
-            /* Component styles */
-        </style>
-        <div>
-            <slot></slot>
-        </div>
-    </template>
-    ```
-
     ```javascript
     class MyComponent extends HTMLElement {
         constructor() {
             super();
             // Component logic and functionality
             const shadowRoot = this.attachShadow({mode: 'open'});
-            const template = document.getElementById('my-component');
-            const templateContent = template.content;
-            shadowRoot.appendChild(templateContent.cloneNode(true));
+            const template = document.createElement('template');
+            template.innerHTML = `
+                <style>
+                    /* Component styles */
+                </style>
+                <div>
+                    <slot></slot>
+                </div>
+                `;
+            shadowRoot.appendChild(template.content.cloneNode(true));
         }
     
         // Add additional methods and callbacks as needed
@@ -82,7 +77,7 @@ To implement a web component, you generally follow these steps:
 
     ```html
     
-    <button is="my-component">Click me</button>
+    <my-component></my-component>
     ```
 
 Custom elements can be either autonomous or customized built-in elements, which inherit from basic HTML elements.
