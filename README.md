@@ -17,6 +17,7 @@ connected, disconnected, adopted, or when its attributes change.
 
 # Web Components
 
+## Guide
 Web Components is a set of technologies that allow you to create reusable custom elements, with their functionality
 encapsulated away from the rest of your code, and utilize them in your web apps.
 It consists of three main technologies:
@@ -28,7 +29,7 @@ It consists of three main technologies:
 - HTML templates: the `<template>` and `<slot>` elements enable you to write markup templates that are not displayed in the
   rendered page.
 
-## Implementation
+### Implementation
 To implement a web component, you generally follow these steps:
 
 1. Create a class that specifies your web component functionality, using the class syntax.
@@ -100,7 +101,7 @@ To implement a web component, you generally follow these steps:
 
 Custom elements can be either autonomous or customized built-in elements, which inherit from basic HTML elements.
 
-## Slot
+### Using `<slot>`
 A <slot> element is a placeholder element that can be used to insert content into a web component.
 When you define a <slot> element in a component's template, you can insert other HTML elements inside the slot by including them as children of the component when you use it in your HTML markup.
 
