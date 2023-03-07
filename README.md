@@ -8,7 +8,7 @@ It consists of three main technologies:
   be used as desired in your user interface.
 - Shadow DOM: a set of JavaScript APIs for attaching an encapsulated "shadow" DOM tree to an element and controlling
   associated functionality.
-- HTML templates: the <template> and <slot> elements enable you to write markup templates that are not displayed in the
+- HTML templates: the `<template>` and `<slot>` elements enable you to write markup templates that are not displayed in the
   rendered page.
 
 To implement a web component, you generally follow these steps:
