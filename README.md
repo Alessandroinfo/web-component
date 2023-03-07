@@ -1,3 +1,20 @@
+# Getting started
+
+👨‍💻 This is a code example that showcases the use of Web Components.
+
+It includes two custom elements:
+
+1️⃣ `button-enhanced` is an autonomous custom element that creates a button with enhanced styling and a custom click
+event.
+
+2️⃣ `paragraph-word-counter` is a customized built-in element that extends the p element and displays the word count of
+its text content.
+
+The code also includes lifecycle methods for the button-enhanced custom element that are invoked when the element is
+connected, disconnected, adopted, or when its attributes change.
+
+▶️ Open the `index.html` in your browser to see the custom components rendered and the relative console log.
+
 # Web Components
 
 Web Components is a set of technologies that allow you to create reusable custom elements, with their functionality
@@ -11,6 +28,7 @@ It consists of three main technologies:
 - HTML templates: the `<template>` and `<slot>` elements enable you to write markup templates that are not displayed in the
   rendered page.
 
+## Implementation
 To implement a web component, you generally follow these steps:
 
 1. Create a class that specifies your web component functionality, using the class syntax.
@@ -82,19 +100,17 @@ To implement a web component, you generally follow these steps:
 
 Custom elements can be either autonomous or customized built-in elements, which inherit from basic HTML elements.
 
-# Getting started
+## Slot
+A <slot> element is a placeholder element that can be used to insert content into a web component.
+When you define a <slot> element in a component's template, you can insert other HTML elements inside the slot by including them as children of the component when you use it in your HTML markup.
 
-👨‍💻 This is a code example that showcases the use of Web Components.
+On the point 4. of [Implementation](##Implementation) we defined a `<slot></slot>`
 
-It includes two custom elements:
-
-1️⃣ `button-enhanced` is an autonomous custom element that creates a button with enhanced styling and a custom click
-event.
-
-2️⃣ `paragraph-word-counter` is a customized built-in element that extends the p element and displays the word count of
-its text content.
-
-The code also includes lifecycle methods for the button-enhanced custom element that are invoked when the element is
-connected, disconnected, adopted, or when its attributes change.
-
-▶️ Open the `index.html` in your browser to see the custom components rendered and the relative console log.
+For example we can project a `<p>...</p>` tag inside our custom component:
+```
+<my-component>
+  <p>This content will be inserted into the slot</p>
+</my-component>
+```
+In this example, the `p` element containing the text "This content will be inserted into the slot" will be inserted into the `<slot>` element in the component's shadow DOM.
+The result is that the `p` element will be rendered inside the <div> element in the component's shadow DOM.
