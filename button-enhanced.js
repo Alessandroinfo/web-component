@@ -47,7 +47,6 @@ class ButtonEnhanced extends HTMLElement {
         this.shadowRoot.appendChild(button);
     }
 
-
     _handleClick(event) {
         // Dispatch a custom click-enhanced event
         const clickEvent = new CustomEvent('click-enhanced', {
