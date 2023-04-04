@@ -2,7 +2,6 @@
  * ParagraphWordCounter is a Customized built-in elements
  * Define a class called ParagraphWordCounter that extends
  * the HTMLParagraphElement class
- *
  */
 class ParagraphWordCounter extends HTMLParagraphElement {
     // Constructor that counts the words of the text content of the paragraph
