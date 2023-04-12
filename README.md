@@ -68,7 +68,7 @@ To implement a web component, you generally follow these steps:
     }
     ```
 
-4. If required, define an HTML template using <template> and <slot>.
+4. If required, define an HTML template using `<template>` and `<slot>`.
 
     ```javascript
     class MyComponent extends HTMLElement {
